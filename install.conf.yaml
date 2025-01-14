@@ -13,6 +13,7 @@
   - [git submodule update --init --recursive, Installing submodules]
   - ["git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting", Installing zsh-syntax-highlighting]
   - ["git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions", Installing zsh-autosuggestions]
-  - [./brew/install-brew.sh, Installing brew packages]
+  - [for i in $(cat ./packages.txt); do; brew install "$i"; done, Installing brew packages]
+  - [for i in $(cat ./cask-packages.txt); do; brew install --cask "$i"; done, Installing brew casks]
 - create:
   - ~/git

@@ -1,0 +1,7 @@
+postman
+visual-studio-code
+iterm2
+google-chrome
+1password
+rectangle
+copyclip

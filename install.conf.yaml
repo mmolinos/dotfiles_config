@@ -1,3 +1,17 @@
+- defaults:
+    link:
+      create: true
+      relink: true
 - clean: []
-- link: {}
-- shell: []
+- link:
+    ~/.zshrc:
+      force: true
+      path: zshrc
+    ~/.oh-my-zsh: oh-my-zsh/
+    ~/.gitignore: gitignore
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing brew]
+  - [for i in $(cat ./brew/packages.txt); do; brew install "$i"; done]
+- create:
+  - ~/git

@@ -1,0 +1,5 @@
+docker
+gh
+jq
+kubernetes-cli
+nvm

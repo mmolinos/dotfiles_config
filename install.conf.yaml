@@ -2,7 +2,7 @@
     link:
       create: true
       relink: true
-- clean: []
+- clean: ['~']
 - link:
     ~/.zshrc:
       force: true
@@ -12,6 +12,6 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing brew]
-  - [for i in $(cat ./brew/packages.txt); do; brew install "$i"; done]
+  - [for i in $(cat ./brew/packages.txt); do; brew install "$i"; done, Installing brew packages]
 - create:
   - ~/git

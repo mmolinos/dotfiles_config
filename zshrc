@@ -48,6 +48,13 @@ function k8s_context {
     kubectl config set-context $(kubectl config current-context) --namespace $1
 }
 
+# Added Homebrew
 export PATH=/opt/homebrew/bin:$PATH
+
+# Added NVM
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# Added .rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

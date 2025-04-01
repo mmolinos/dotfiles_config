@@ -3,3 +3,4 @@ gh
 jq
 kubernetes-cli
 nvm
+rbenv

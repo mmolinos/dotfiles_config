@@ -4,3 +4,4 @@ jq
 kubernetes-cli
 nvm
 rbenv
+anomalyco/tap/opencode

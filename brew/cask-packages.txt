@@ -1,6 +1,6 @@
 postman
 visual-studio-code
-iterm2
+ghostty
 google-chrome
 1password
 rectangle

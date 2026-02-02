@@ -139,6 +139,3 @@ alias lg='lazygit'
 # Added .rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-# Added by Windsurf
-export PATH="/Users/a0842099/.codeium/windsurf/bin:$PATH"

@@ -1,0 +1,125 @@
+# [PREFIX] <Title>
+## Description
+
+### Why
+Clearly articulate the problem, the business value, or the technical justification for the task. Explain the current state and why a change is needed. Use conversational tone from the user's input if it provides good context.
+
+### What
+Describe the concrete task, feature, or solution to be implemented. Be specific about API endpoints, data changes, code modifications, or new functionalities. If JSON or code snippets are provided by the user, embed them accurately in Markdown code blocks.
+
+---
+
+## Affected Functionality
+List the specific modules, services, or user-facing features that will be impacted by this change.
+
+---
+
+## Acceptance Criteria
+This section MUST use the GIVEN-WHEN-THEN (BDD) format for every scenario. Each scenario should describe a testable behavior. Cover happy paths, edge cases, and error conditions. Ensure criteria are measurable.
+
+**Scenario [N]: [Descriptive Scenario Name]**
+* **GIVEN** [initial context or preconditions]
+* **WHEN** [specific action or event occurs]
+* **THEN** [expected outcome or result]
+
+---
+
+## Development Breakdown
+---
+
+## Documentation
+Specify which documentation needs updating (e.g., API docs, Confluence, internal READMEs). Mention the platform if known (e.g., Backstage with AsyncAPI). List any entirely new documentation that might be required.
+
+---
+
+## Additional Considerations
+* **Error Handling:** (e.g., graceful degradation, logging)
+* **Idempotency:** (for API endpoints or event processing)
+* **Backward Compatibility:** (for API changes, event schema changes)
+
+
+---
+
+INSTRUCTIONS FOR THE LLM:
+
+Given the user's free-text request, produce TWO outputs in the following order.
+
+1) A JSON object inside a triple-backtick code block labeled ```json``` with EXACTLY these fields:
+- title: the one-line summary/title of the ticket (max 80 chars)
+- scenarios_count: integer count of BDD scenarios generated
+- validation_notes: short array of notes about any missing pieces or validations performed (empty array if none)
+
+2) The full ticket markdown under a second-level header exactly: "## TICKET_PREVIEW". The ticket markdown must follow the CW template above exactly and be safe to paste into the JIRA description field as Markdown.
+
+Additional constraints:
+- Every Acceptance Criteria scenario must follow the GIVEN/WHEN/THEN structure.
+- If the user's input lacks details for any acceptance scenarios, propose reasonable scenarios and indicate them in `validation_notes`.
+- Preserve and include any code/JSON the user provided inside fenced code blocks in the "What" section.
+- Do not include any additional commentary outside the JSON block and the `## TICKET_PREVIEW` section.
+
+Example output structure:
+
+```json
+{"title":"[PDS] Add rate limiting to notifications API","scenarios_count":2,"validation_notes":[]}
+```
+
+## TICKET_PREVIEW
+
+# [PREFIX] <Insert Title Here>
+
+## Description
+
+### Why
+[Insert text here]
+
+### What
+[Insert text here]
+
+---
+
+## Affected Functionality
+* [Functionality A]
+* [Functionality B]
+
+---
+
+## Acceptance Criteria
+**Scenario 1: [Descriptive Scenario Name]**
+* **GIVEN** [initial context or preconditions]
+* **WHEN** [specific action or event occurs]
+* **THEN** [expected outcome or result]
+
+**Scenario 2: [Descriptive Scenario Name]**
+* **GIVEN** [initial context or preconditions]
+* **WHEN** [specific action or event occurs]
+* **THEN** [expected outcome or result]
+
+---
+
+## Development Breakdown
+
+* **Outside-code development needed:** [e.g., Infrastructure, DB changes]
+* **Basic development instructions:**
+    1.  [Step 1]
+    2.  [Step 2]
+
+---
+
+## Documentation
+* [Link or description of doc to update]
+
+---
+
+## Additional Considerations
+
+### New Documentation
+* [List any entirely new docs required]
+
+### Unit Testing
+* [Key areas for unit/integration testing]
+
+### Checklist
+* **Error Handling:** [Graceful degradation, retries?]
+* **Logging & Monitoring:** [Observability needs?]
+* **Idempotency:** [Required for API/Events?]
+* **Backward Compatibility:** [Schema/API changes?]

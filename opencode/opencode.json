@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [],
+  "command": {
+  },
+  "mcp": {
+     "confluence": {
+       "type": "remote",
+       "url": "https://mcp.atlassian.com/v1/mcp",
+       "enabled": true
+     }
+  },
+  "provider": {
+    "github-copilot": {
+      "models": {
+        "GPT-5.2-Codex": {
+          "options": {
+            "thinking": {
+              "reasoningEffort": "xhigh",
+              "textVerbosity": "low"
+            }
+          }
+        }
+      }
+    }
+  }
+}

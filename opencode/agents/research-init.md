@@ -3,7 +3,7 @@ mode: subagent
 description: "Deep repo research and RESEARCH.md updater"
 temperature: 0.2
 color: "#2D8C7F"
-steps: 20
+steps: 50
 permission:
   read: allow
   write:

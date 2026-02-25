@@ -3,7 +3,6 @@ mode: subagent
 description: "Implement all tasks from PLAN.md"
 temperature: 0.2
 color: "#2F80ED"
-steps: 30
 permission:
   read: allow
   write: allow

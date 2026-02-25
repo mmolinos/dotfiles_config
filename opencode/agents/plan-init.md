@@ -3,7 +3,7 @@ mode: subagent
 description: "Feature planning and PLAN.md writer"
 temperature: 0.2
 color: "#6B4ACF"
-steps: 20
+steps: 50
 permission:
   read: allow
   write:

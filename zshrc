@@ -119,6 +119,8 @@ alias k="kubectl"
 alias cat='bat --paging=never'
 alias watch='viddy'
 
+export EDITOR="code --wait"
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme 2>/dev/null
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

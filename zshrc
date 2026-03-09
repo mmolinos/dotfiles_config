@@ -117,7 +117,6 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 export OPENCODE_EXPERIMENTAL_LSP_TOOL=true
 
 alias k="kubectl"
-alias cat='bat --paging=never'
 alias watch='viddy'
 
 export EDITOR="code --wait"

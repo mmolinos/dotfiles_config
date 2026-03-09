@@ -114,6 +114,7 @@ export COMPOSE_HTTP_TIMEOUT=300
 export DOCKER_BUILDKIT=1 
 export PATH=/opt/homebrew/bin:/opt/homebrew/bin/elixir:$PATH
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+export OPENCODE_EXPERIMENTAL_LSP_TOOL=true
 
 alias k="kubectl"
 alias cat='bat --paging=never'

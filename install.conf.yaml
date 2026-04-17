@@ -8,6 +8,7 @@
       force: true
       path: zshrc
     ~/.oh-my-zsh: oh-my-zsh/
+    ~/.ssh: .ssh/
     ~/.gitignore: gitignore
     ~/.config/opencode: opencode
 - shell:

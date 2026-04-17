@@ -6,3 +6,4 @@ nvm
 rbenv
 viddy
 anomalyco/tap/opencode
+cloudflared

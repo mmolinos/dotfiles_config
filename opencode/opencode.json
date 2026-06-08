@@ -10,18 +10,9 @@
        "enabled": true
      }
   },
-  "provider": {
-    "github-copilot": {
-      "models": {
-        "GPT-5.2-Codex": {
-          "options": {
-            "thinking": {
-              "reasoningEffort": "xhigh",
-              "textVerbosity": "low"
-            }
-          }
-        }
-      }
+  "agent": {
+    "explore": {
+      "model": "github-copilot/gpt-5.4-mini"
     }
   }
 }

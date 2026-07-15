@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "confluence": {
+       "type": "remote",
+       "url": "https://mcp.atlassian.com/v1/mcp",
+       "enabled": true
+     },
+    "cw-ai-gateway": {
+      "command": "/usr/local/bin/mcp-k8s-proxy",
+      "args": ["--service", "cw-go-pe-ai-gateway", "--namespace", "cw-production"]
+    }
+  }
+}

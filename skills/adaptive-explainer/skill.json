@@ -1,0 +1,11 @@
+{
+  "name": "adaptive-explainer",
+  "type": "skill",
+  "version": "1.2.0",
+  "title": "Adaptive Explainer",
+  "description": "Explain complex topics, code, and AI outputs with ASD-STE100-inspired clarity and Mermaid-first diagrams. Use when writing PR descriptions, ADRs, technical guides, backend designs, API documentation, runbooks, or explanations of frontend and backend changes, as well as visual explainers, interactive HTML, and narrated video. Apply to technical communication across engineering work, even when no visual artifact is requested. Choose the smallest useful format; complement implementation and testing workflows rather than replacing them.",
+  "entrypoint": "SKILL.md",
+  "tags": ["tech_agnostic_recommended", "technical-writing", "documentation"],
+  "installsTo": ".agents/skills/adaptive-explainer",
+  "updatedAt": "2026-10-06"
+}

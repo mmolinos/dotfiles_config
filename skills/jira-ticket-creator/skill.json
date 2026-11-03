@@ -1,0 +1,11 @@
+{
+  "name": "jira-ticket-creator",
+  "type": "skill",
+  "version": "2.0.0",
+  "title": "Jira Ticket Creator",
+  "description": "Interactively create Jira tickets with Atlassian MCP using type-aware fields, selectable recent sprints, teams, reporters, estimations, parent epics, and project description templates. Use when users ask to create a Jira ticket, task, story, defect, incident, epic, or another standard issue type and want a guided preview-and-confirm workflow.",
+  "entrypoint": "SKILL.md",
+  "tags": ["jira", "atlassian", "ticket-creation", "project-management", "tech_agnostic_recommended"],
+  "installsTo": ".agents/skills/jira-ticket-creator",
+  "updatedAt": "2026-09-02"
+}

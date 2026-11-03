@@ -5,6 +5,5 @@ kubernetes-cli
 nvm
 rbenv
 viddy
-anomalyco/tap/opencode
 fzf
 nvim
